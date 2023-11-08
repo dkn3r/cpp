@@ -8,10 +8,10 @@ int sixth(int numbers[], int size);
 int main() {
 	
 	const int size = 5;
-	int numbers[size];
-	for (int i = 0; i < size; i++) {
-		numbers[i] = rand() % 10;
-	}
+	int numbers[size] = {9,0,1,0,3};
+//	for (int i = 0; i < size; i++) {
+//		numbers[i] = rand() % 10;
+//	}
 	for (int i = 0; i < size; i++) {
 		cout << numbers[i] << " ";
 	}
