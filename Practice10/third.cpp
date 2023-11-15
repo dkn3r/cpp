@@ -10,7 +10,7 @@ int third() {
 	for (int i = 0; i < m; i++) {
 		for (int j = 0; j < n; j++) {
 			numbers[i][j] = rand() % 10;
-			cout << numbers[i][j];
+			cout << numbers[i][j] << ' ';
 		}
 		cout << endl;
 	}

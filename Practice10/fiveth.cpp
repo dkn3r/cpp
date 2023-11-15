@@ -10,7 +10,7 @@ int fiveth() {
 	for (int i = 0; i < m; i++) {
 		for (int j = 0; j < n; j++) {
 			numbers[i][j] = rand() % 10;
-			cout << numbers[i][j];
+			cout << numbers[i][j] << ' ';
 		}
 		cout << endl;
 	}
@@ -19,9 +19,18 @@ int fiveth() {
 		for (int j = 0; j < n; j++) {
 			if (numbers[i][j] > max) {
 				max = numbers[i][j];
+				
 			}
 		}
 	}
-	cout << "Max number in an array are: " << max<<endl;
+	cout << "Max number in an array are: " << max << endl;
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (numbers[i][j] == max) {
+				cout <<"(" << i << "," << j<<")"<<endl;
+			}
+		}
+	}
+	
 	return 0;
 }
