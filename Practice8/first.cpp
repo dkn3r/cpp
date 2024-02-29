@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int m = 12;
+    const int m = 12;
     int numbers[m];
     int temp = 0;
     for (int i=0;i<m;i++){
